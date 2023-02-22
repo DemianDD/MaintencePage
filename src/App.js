@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { FooterPanel } from './components/FooterPanel';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='mainApp'>
+      <div className='centered'>
+        <div className='mainText'>Ooh..</div>
+        <div className='mediumText'>От холєра. Схоже наш сайт оновлюється...</div>
+        <img className='logo' src='https://live.staticflickr.com/65535/52646464775_6046ab08df_z.jpg'/>
+      </div>
+      <div className='footer'>
+        <div className='smallText'>Але ми є тут</div>
+        <FooterPanel/>
+      </div>
     </div>
+
   );
 }
 
